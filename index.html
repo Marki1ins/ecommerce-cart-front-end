@@ -8,7 +8,28 @@
     <title>Ecommerce</title>
   </head>
   <body>
-    <h1 class="font-bold text-3xl">Welcome to Ecommerce</h1>
+    <h1 class="font-bold text-3xl mb-8">Welcome to Ecommerce</h1>
+    <main class="flex gap-3">
+      <div
+        id="pai"
+        class="container border flex flex-row gap-10 flex-wrap"
+      ></div>
+      <div id="cart" class="border w-80 h-full p-3 flex flex-col">
+        <h2 class="font-bold text-xl text-center mb-4">
+          🛒 Carrinho de Compras
+        </h2>
+        <div id="cart-content" class="mb-5 flex flex-wrap gap-1"></div>
+        <p id="total-price" class="text-right">
+          Total: <span id="calculate-value"></span>
+        </p>
+        <button
+          id="clear-cart"
+          class="w-full border border-black py[2px] px-5 bg-[#E6E6E6]"
+        >
+          Esvaziar Carrinho
+        </button>
+      </div>
+    </main>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
